@@ -7,7 +7,8 @@
     "build": "remix build",
     "dev": "remix dev --manual",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "clean": "rimraf ./node_modules/.cache ./build ./public/build"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.0.0",
@@ -29,6 +30,7 @@
     "postcss-import": "^15.1.0",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.4",
+    "rimraf": "^5.0.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   },

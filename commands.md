@@ -10,4 +10,7 @@ $ pnpm add -D prettier prettier-plugin-tailwindcss eslint-config-prettier
 $ pnpm add -D tailwindcss
 $ pnpm add -D autoprefixer postcss-import
 $ npx tailwindcss init -p --ts
+
+# add clean command
+$ pnpm add -D rimraf
 ```
