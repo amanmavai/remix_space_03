@@ -40,4 +40,11 @@ $ prisma generate
 
 # run prisma studio
 $ pnpm exec prisma studio
+
+$ pnpm add bcryptjs
+$ pnpm add -D @types/bcryptjs
+
+$ pnpm add -D tsx
+
+$ pnpm add tiny-invariant
 ```
