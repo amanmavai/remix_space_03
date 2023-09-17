@@ -13,4 +13,10 @@ $ npx tailwindcss init -p --ts
 
 # add clean command
 $ pnpm add -D rimraf
+
+# add playwright
+$ pnpm create playwright
+$ pnpm install -D cross-env
+# run playwright test in ui
+$ pnpm exec playwright test --ui
 ```

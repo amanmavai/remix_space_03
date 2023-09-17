@@ -8,7 +8,8 @@
     "dev": "remix dev --manual",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
-    "clean": "rimraf ./node_modules/.cache ./build ./public/build"
+    "clean": "rimraf ./node_modules/.cache ./build ./public/build",
+    "test:e2e:dev": "cross-env PORT=3000 playwright test"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.0.0",
@@ -20,11 +21,14 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.38.0",
     "@remix-run/dev": "^2.0.0",
     "@remix-run/eslint-config": "^2.0.0",
+    "@types/node": "^20.6.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.15",
+    "cross-env": "^7.0.3",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^9.0.0",
     "postcss-import": "^15.1.0",
