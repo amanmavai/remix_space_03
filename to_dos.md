@@ -1,4 +1,4 @@
-- [ ] auth
+- [ ]
 
 # Completed
 
@@ -8,3 +8,4 @@
 - [x] tailwindcss
 - [x] e2e testing setup (use Playwright)
 - [x] prisma setup
+- [x] auth
