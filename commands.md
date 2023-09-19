@@ -57,4 +57,5 @@ $ pnpm dlx husky-init && pnpm install
 # To add another hook use husky add. For example:
 $ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
+$ pnpm add -D @commitlint/{cli,config-conventional}
 ```
