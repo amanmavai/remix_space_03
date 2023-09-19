@@ -13,6 +13,7 @@
 - [ ] Deployment with docker (first use existing dockerfile in indie-stack for deployment, and then learn more)
 - [ ] serverless
 - [ ] Github Co-Pilot
+- [ ] add husky pre-push hook
 
 # Completed
 
