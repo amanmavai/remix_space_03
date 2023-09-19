@@ -9,7 +9,8 @@
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
     "clean": "rimraf ./node_modules/.cache ./build ./public/build",
-    "test:e2e:dev": "cross-env PORT=3000 playwright test"
+    "test:e2e:dev": "cross-env PORT=3000 playwright test",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@prisma/client": "5.3.1",
@@ -42,7 +43,8 @@
     "rimraf": "^5.0.1",
     "tailwindcss": "^3.3.3",
     "tsx": "^3.12.10",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "husky": "^8.0.0"
   },
   "engines": {
     "node": ">=18.0.0"

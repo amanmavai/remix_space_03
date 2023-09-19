@@ -47,4 +47,14 @@ $ pnpm add -D @types/bcryptjs
 $ pnpm add -D tsx
 
 $ pnpm add tiny-invariant
+
+$ pnpm dlx husky-init && pnpm install
+# It will:
+    # Add prepare script to package.json
+    # Create a sample pre-commit hook that you can edit (by default, npm test will run when you commit)
+    # Configure Git hooks path
+
+# To add another hook use husky add. For example:
+$ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+
 ```
