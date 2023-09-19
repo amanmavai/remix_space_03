@@ -24,3 +24,4 @@
 - [x] prisma setup
 - [x] auth
 - [x] add husky pre-push hook
+- [x] add commitlint
