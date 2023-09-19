@@ -10,6 +10,7 @@
     "typecheck": "tsc",
     "clean": "rimraf ./node_modules/.cache ./build ./public/build",
     "test:e2e:dev": "cross-env PORT=3000 playwright test",
+    "commit": "commit",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/prompt-cli": "^17.7.1",
     "@playwright/test": "^1.38.0",
     "@remix-run/dev": "^2.0.0",
     "@remix-run/eslint-config": "^2.0.0",
