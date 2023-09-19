@@ -60,4 +60,6 @@ $ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 $ pnpm add -D @commitlint/{cli,config-conventional}
 
 $ npx husky add .husky/pre-push "pnpm test"
+
+$ pnpm add -D daisyui@latest
 ```
