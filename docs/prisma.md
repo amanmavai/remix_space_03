@@ -39,7 +39,7 @@ model User {
 $ npm install @prisma/client
 
 // After you change your data model, you'll need to manually re-generate Prisma Client to ensure the code inside node_modules/.prisma/client gets updated:
-$ prisma generate
+$ pnpm exec prisma generate
 
 
 ```
