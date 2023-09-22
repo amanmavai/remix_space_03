@@ -1,54 +1,54 @@
 ```sh
-$ pnpm create remix remix_space
+$ npx create-remix@latest remix_space
 
 # add prettier
 $ touch .prettierrc .prettierignore
-$ pnpm add -D prettier prettier-plugin-tailwindcss eslint-config-prettier
+$ npm install -D prettier prettier-plugin-tailwindcss eslint-config-prettier
 
 # add tailwindcss
 # enable tailwind and postcss in remix.config.js
-$ pnpm add -D tailwindcss
-$ pnpm add -D autoprefixer postcss-import
+$ npm install -D tailwindcss
+$ npm install -D autoprefixer postcss-import
 $ npx tailwindcss init -p --ts
 
 # add clean command
-$ pnpm add -D rimraf
+$ npm install -D rimraf
 
 # add playwright
-$ pnpm create playwright
-$ pnpm install -D cross-env
+$ npm init playwright@latest
+$ npm install -D cross-env
 # run playwright test in ui
-$ pnpm exec playwright test --ui
+$ npx playwright test --ui
 
 # add prisma
-$ pnpm add -D prisma
+$ npm install -D prisma
 
 # this command added 2 files
 #  1. prisma/schema.prisma
 #  2. .env
-$ pnpm exec prisma init --datasource-provider
+$ npx prisma init --datasource-provider sqlite
 
 # This command did two things:
   # 1. It creates a new SQL migration file for this migration in the prisma/migrations directory.
   # 2. It runs the SQL migration file against the database.
   # 3. Also added @prisma/client
-$ pnpm exec prisma migrate dev --name init
+$ npx prisma migrate dev --name init
 
 # Whenever you make changes to your database that are reflected in the Prisma schema,
 # you need to manually re-generate Prisma Client to update the generated code in the node_modules/.prisma/client directory:
 $ prisma generate
 
 # run prisma studio
-$ pnpm exec prisma studio
+$ npx prisma studio
 
-$ pnpm add bcryptjs
-$ pnpm add -D @types/bcryptjs
+$ npm install bcryptjs
+$ npm install -D @types/bcryptjs
 
-$ pnpm add -D tsx
+$ npm install -D tsx
 
-$ pnpm add tiny-invariant
+$ npm install tiny-invariant
 
-$ pnpm dlx husky-init && pnpm install
+$ npx husky-init && npm install
 # It will:
     # Add prepare script to package.json
     # Create a sample pre-commit hook that you can edit (by default, npm test will run when you commit)
@@ -57,12 +57,13 @@ $ pnpm dlx husky-init && pnpm install
 # To add another hook use husky add. For example:
 $ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 
-$ pnpm add -D @commitlint/{cli,config-conventional}
+$ npm install -D @commitlint/{cli,config-conventional}
 
-$ npx husky add .husky/pre-push "pnpm test"
+$ npx husky add .husky/pre-push "npm test"
 
-$ pnpm add -D daisyui@latest
+$ npm install -D daisyui@latest
 
-$ pnpm dlx shadcn-ui@latest init
-$ pnpm dlx shadcn-ui@latest add button
+$ npx shadcn-ui@latest init
+$ npx shadcn-ui@latest add button
+
 ```
