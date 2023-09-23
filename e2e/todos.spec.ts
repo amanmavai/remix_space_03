@@ -29,10 +29,18 @@ test.describe("Todo App", () => {
   });
 
   test("toggles a todo", async ({page}) => {
-    await page.getByRole("button", {name: /Toggle Todo/i}).click();
+    const todoItemTextBox = page.getByRole("textbox", {name: "todo-text"});
 
-    const todoClass = await page.getAttribute(".todo", "class");
-    expect(todoClass).toContain("completed");
+    await todoItemTextBox.click();
+    await todoItemTextBox.fill(TODO_ITEMS[1]);
+    await page.getByRole("button", {name: /Add/i}).click();
+
+    const item = page.getByTestId("todo-item");
+    await item.click();
+    await expect(item).toHaveClass("cursor-pointer line-through");
+
+    await item.click();
+    await expect(item).not.toHaveClass("cursor-pointer line-through");
   });
 
   test("deletes a todo", async ({page}) => {
