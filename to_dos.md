@@ -1,5 +1,5 @@
 - [ ] implement contacts app
-- [ ] implement todos app
+- [x] implement todos app
 - [ ] implement book management system (book_binge)
 - [ ] implement multi-tenancy using node-config
 - [ ] implement i18n
