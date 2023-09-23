@@ -86,7 +86,7 @@ migrations/
 
 ```js
 // To seed the database, run the db seed CLI command:
-$ pnpm exec prisma db seed
+$  npx prisma db seed
 
 
 ```
