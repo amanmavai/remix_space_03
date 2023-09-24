@@ -39,7 +39,7 @@ model User {
 $ npm install @prisma/client
 
 // After you change your data model, you'll need to manually re-generate Prisma Client to ensure the code inside node_modules/.prisma/client gets updated:
-$ pnpm exec prisma generate
+$ npx prisma generate
 
 
 ```
@@ -57,14 +57,14 @@ const prisma = new PrismaClient();
 # Prisma Migrations
 
 ```js
-$ prisma migrate dev --name init
+$ npx prisma migrate dev --name init
 // Your Prisma schema is now in sync with your database schema and you have initialized a migration history:
 migrations/
   └─ 20210313140442_init/
     └─ migration.sql
 
 
-$ prisma migrate dev --name added_new_col
+$ npx prisma migrate dev --name added_new_col
 // Your Prisma schema is once again in sync with your database schema, and your migration history contains new migration:
 
 migrations/
