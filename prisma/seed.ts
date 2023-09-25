@@ -18,7 +18,7 @@ async function seed() {
   await prisma.note.create({data: {title: "My Second Note", body: "Hello Universe!", userId: user.id}});
   await prisma.note.create({data: {title: "My Third Note", body: "Hello Galaxy!", userId: user.id}});
 
-  [
+  const contacts = [
     {
       avatar: "https://sessionize.com/image/124e-400o400o2-wHVdAuNaxi8KJrgtN3ZKci.jpg",
       first: "Shruti",
@@ -53,9 +53,11 @@ async function seed() {
       last: "Chedeau",
       twitter: "@Vjeux",
     },
-  ].forEach(async (contact) => {
+  ];
+
+  for (const contact of contacts) {
     await prisma.contact.create({data: {...contact}});
-  });
+  }
 
   console.log(`Database has been seeded. 🌱`);
 }
