@@ -39,3 +39,14 @@ model Note {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   userId String
 }
+
+model Contact {
+  id String @id @default(cuid())
+  first String?
+  last String?
+  avatar String?
+  twitter String?
+  notes String?
+  favorite Boolean?
+  createdAt DateTime @default(now())
+}
